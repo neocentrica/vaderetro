@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <title>vade retro</title> 
+   <link rel="stylesheet" type="text/css" href="estilo.css">
+   <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+<h1 id="vade">vade retro</h1>
+<!--<h2>vamos a repetir</h2>-->
+
+<div id="sangria">
+   <h3>sangría</h3>
+
+   <h4>ingredientes</h4>
+
+   <select id="ing_sang_selector1" onchange="next1(), next2()">
+      <option value="0"></option>
+      <option value="adecoco1">agua de coco</option>
+      <option value="atonic1">agua tónica</option>
+      <option value="amaretto1">amaretto</option>
+      <option value="amadeango1">amargo de angostura</option>
+      <option value="azucar1">azucar</option>
+      <option id="op_brandy1" value="brandy2">brandy</option>
+      <option value="cachaca1">cachaça</option>
+      <option value="cafees1">café espresso</option>
+      <option value="campari1">campari</option>
+      <option value="casa1">caramelo salado</option>
+      <option value="casdeli1">cascos de limón</option>
+      <option value="cereza1">cereza</option>
+      <option value="cladehue1">clara de huevo</option>
+      <option value="cremdeca1">crema de cacao</option>
+      <option value="cremdele1">crema de leche</option>
+      <option value="cremdemu1">crême de mure</option>
+      <option value="fresa1">fresa</option>
+      <option value="gin1">gin</option>
+      <option value="ginlondry1">gin london dry</option>
+      <option value="granadina1">granadina</option>
+      <option value="hierbabuena1">hierbabuena</option>
+      <option value="jadefrem1">jarabe de frambuesa</option>
+      <option value="jadejen1">jarabe de jengibre</option>
+      <option value="jademan1">jarabe de manzana</option>
+      <option value="jadepiahu1">jarabe de piña ahumada</option>
+      <option value="jasi1">jarabe simple</option>
+      <option value="judearan1">jugo de arandanos</option>
+      <option value="judeli1">jugo de limón</option>
+      <option value="judena1">jugo de naranja</option>
+      <option value="judepi1">jugo de piña</option>
+      <option value="jadeto1">jarabe de tomate</option>
+      <option value="lideca1">licor de café</option>
+      <option value="lideda1">licor de durazno</option>
+      <option value="lidejen1">licor de jengibre</option>
+      <option value="lideman1">licor de manzana</option>
+      <option value="lideme1">licor de melón</option>
+      <option value="manzana1">manzana</option>
+      <option value="miel1">miel</option>
+      <option id="op_naranja2" value="naranja1">naranja</option>
+      <option value="ron1">ron</option>
+      <option value="ronbla1">ron blanco</option>
+      <option value="soda1">soda</option>
+      <option value="tequila1">tequila</option>
+      <option value="trisec1">triple sec</option>
+      <option value="verdry1">vermouth dry</option>
+      <option value="verro1">vermouth rosso</option>
+      <option id="op_vino2" value="vino1">vino</option>
+      <option value="vodka1">vodka</option>
+      <option value="vodci1">vodka citrón</option>
+      <option value="whisky1">whisky</option>
+      <option value="whisbour1">whisky bourbon</option>
+      <option value="whises1">whisky escosés</option>
+   </select>
+
+   <select id="ing_sang_selector2" onchange="next1(), next2()">
+      <option value="0"></option>
+      <option value="adecoco2">agua de coco</option>
+      <option value="atonic2">agua tónica</option>
+      <option value="amaretto2">amaretto</option>
+      <option value="amadeango2">amargo de angostura</option>
+      <option value="azucar2">azucar</option>
+      <option id="op_brandy2" value="brandy2">brandy</option>
+      <option value="cachaca2">cachaça</option>
+      <option value="cafees2">café espresso</option>
+      <option value="campari2">campari</option>
+      <option value="casa2">caramelo salado</option>
+      <option value="casdeli2">cascos de limón</option>
+      <option value="cereza2">cereza</option>
+      <option value="cladehue2">clara de huevo</option>
+      <option value="cremdeca2">crema de cacao</option>
+      <option value="cremdele2">crema de leche</option>
+      <option value="cremdemu2">crême de mure</option>
+      <option value="fresa2">fresa</option>
+      <option value="gin2">gin</option>
+      <option value="ginlondry2">gin london dry</option>
+      <option value="granadina2">granadina</option>
+      <option value="hierbabuena2">hierbabuena</option>
+      <option value="jadefrem2">jarabe de frambuesa</option>
+      <option value="jadejen2">jarabe de jengibre</option>
+      <option value="jademan2">jarabe de manzana</option>
+      <option value="jadepiahu2">jarabe de piña ahumada</option>
+      <option value="jasi2">jarabe simple</option>
+      <option value="judearan2">jugo de arandanos</option>
+      <option value="judeli2">jugo de limón</option>
+      <option value="judena2">jugo de naranja</option>
+      <option value="judepi2">jugo de piña</option>
+      <option value="jadeto2">jarabe de tomate</option>
+      <option value="lideca2">licor de café</option>
+      <option value="lideda2">licor de durazno</option>
+      <option value="lidejen2">licor de jengibre</option>
+      <option value="lideman2">licor de manzana</option>
+      <option value="lideme2">licor de melón</option>
+      <option value="manzana2">manzana</option>
+      <option value="miel2">miel</option>
+      <option id="op_naranja2" value="naranja2">naranja</option>
+      <option value="ron2">ron</option>
+      <option value="ronbla2">ron blanco</option>
+      <option value="soda2">soda</option>
+      <option value="tequila2">tequila</option>
+      <option value="trisec2">triple sec</option>
+      <option value="verdry2">vermouth dry</option>
+      <option value="verro2">vermouth rosso</option>
+      <option id="op_vino2" value="vino2">vino</option>
+      <option value="vodka2">vodka</option>
+      <option value="vodci2">vodka citrón</option>
+      <option value="whisky2">whisky</option>
+      <option value="whisbour2">whisky bourbon</option>
+      <option value="whises2">whisky escosés</option>
+   </select>
+
+   <select id="ing_sang_selector3" onchange="next1(), next2()">
+      <option value="0"></option>
+      <option value="adecoco3">agua de coco</option>
+      <option value="atonic3">agua tónica</option>
+      <option value="amaretto3">amaretto</option>
+      <option value="amadeango3">amargo de angostura</option>
+      <option value="azucar3">azucar</option>
+      <option id="op_brandy3" value="brandy3">brandy</option>
+      <option value="cachaca3">cachaça</option>
+      <option value="cafees3">café espresso</option>
+      <option value="campari3">campari</option>
+      <option value="casa3">caramelo salado</option>
+      <option value="casdeli3">cascos de limón</option>
+      <option value="cereza3">cereza</option>
+      <option value="cladehue3">clara de huevo</option>
+      <option value="cremdeca3">crema de cacao</option>
+      <option value="cremdele3">crema de leche</option>
+      <option value="cremdemu3">crême de mure</option>
+      <option value="fresa3">fresa</option>
+      <option value="gin3">gin</option>
+      <option value="ginlondry3">gin london dry</option>
+      <option value="granadina3">granadina</option>
+      <option value="hierbabuena3">hierbabuena</option>
+      <option value="jadefrem3">jarabe de frambuesa</option>
+      <option value="jadejen3">jarabe de jengibre</option>
+      <option value="jademan3">jarabe de manzana</option>
+      <option value="jadepiahu3">jarabe de piña ahumada</option>
+      <option value="jasi3">jarabe simple</option>
+      <option value="judearan3">jugo de arandanos</option>
+      <option value="judeli3">jugo de limón</option>
+      <option value="judena3">jugo de naranja</option>
+      <option value="judepi3">jugo de piña</option>
+      <option value="jadeto3">jarabe de tomate</option>
+      <option value="lideca3">licor de café</option>
+      <option value="lideda3">licor de durazno</option>
+      <option value="lidejen3">licor de jengibre</option>
+      <option value="lideman3">licor de manzana</option>
+      <option value="lideme3">licor de melón</option>
+      <option value="manzana3">manzana</option>
+      <option value="miel3">miel</option>
+      <option id="op_naranja3" value="naranja3">naranja</option>
+      <option value="ron3">ron</option>
+      <option value="ronbla3">ron blanco</option>
+      <option value="soda3">soda</option>
+      <option value="tequila3">tequila</option>
+      <option value="trisec3">triple sec</option>
+      <option value="verdry3">vermouth dry</option>
+      <option value="verro3">vermouth rosso</option>
+      <option id="op_vino3" value="vino3">vino</option>
+      <option value="vodka3">vodka</option>
+      <option value="vodci3">vodka citrón</option>
+      <option value="whisky3">whisky</option>
+      <option value="whisbour3">whisky bourbon</option>
+      <option value="whises3">whisky escosés</option>
+</select>
+
+<select id="ing_sang_selector4" onchange="next1(), next2()">
+   <option value="0"></option>
+      <option value="adecoco4">agua de coco</option>
+      <option value="atonic4">agua tónica</option>
+      <option value="amaretto4">amaretto</option>
+      <option value="amadeango4">amargo de angostura</option>
+      <option value="azucar4">azucar</option>
+      <option id="op_brandy4" value="brandy4">brandy</option>
+      <option value="cachaca4">cachaça</option>
+      <option value="cafees4">café espresso</option>
+      <option value="campari4">campari</option>
+      <option value="casa4">caramelo salado</option>
+      <option value="casdeli4">cascos de limón</option>
+      <option value="cereza4">cereza</option>
+      <option value="cladehue4">clara de huevo</option>
+      <option value="cremdeca4">crema de cacao</option>
+      <option value="cremdele4">crema de leche</option>
+      <option value="cremdemu4">crême de mure</option>
+      <option value="fresa4">fresa</option>
+      <option value="gin4">gin</option>
+      <option value="ginlondry4">gin london dry</option>
+      <option value="granadina4">granadina</option>
+      <option value="hierbabuena4">hierbabuena</option>
+      <option value="jadefrem4">jarabe de frambuesa</option>
+      <option value="jadejen4">jarabe de jengibre</option>
+      <option value="jademan4">jarabe de manzana</option>
+      <option value="jadepiahu4">jarabe de piña ahumada</option>
+      <option value="jasi4">jarabe simple</option>
+      <option value="judearan4">jugo de arandanos</option>
+      <option value="judeli4">jugo de limón</option>
+      <option value="judena4">jugo de naranja</option>
+      <option value="judepi4">jugo de piña</option>
+      <option value="jadeto4">jarabe de tomate</option>
+      <option value="lideca4">licor de café</option>
+      <option value="lideda4">licor de durazno</option>
+      <option value="lidejen4">licor de jengibre</option>
+      <option value="lideman4">licor de manzana</option>
+      <option value="lideme4">licor de melón</option>
+      <option value="manzana4">manzana</option>
+      <option value="miel4">miel</option>
+      <option id="op_naranja4" value="naranja4">naranja</option>
+      <option value="ron4">ron</option>
+      <option value="ronbla4">ron blanco</option>
+      <option value="soda4">soda</option>
+      <option value="tequila4">tequila</option>
+      <option value="trisec4">triple sec</option>
+      <option value="verdry4">vermouth dry</option>
+      <option value="verro4">vermouth rosso</option>
+      <option id="op_vino4" value="vino4">vino</option>
+      <option value="vodka4">vodka</option>
+      <option value="vodci4">vodka citrón</option>
+      <option value="whisky4">whisky</option>
+      <option value="whisbour4">whisky bourbon</option>
+      <option value="whises4">whisky escosés</option>
+</select>
+
+<select id="ing_sang_selector5" onchange="next1(), next2()">
+      <option value="0"></option>
+      <option value="adecoco5">agua de coco</option>
+      <option value="atonic5">agua tónica</option>
+      <option value="amaretto5">amaretto</option>
+      <option value="amadeango5">amargo de angostura</option>
+      <option value="azucar5">azucar</option>
+      <option id="op_brandy5" value="brandy5">brandy</option>
+      <option value="cachaca5">cachaça</option>
+      <option value="cafees5">café espresso</option>
+      <option value="campari5">campari</option>
+      <option value="casa5">caramelo salado</option>
+      <option value="casdeli5">cascos de limón</option>
+      <option value="cereza5">cereza</option>
+      <option value="cladehue5">clara de huevo</option>
+      <option value="cremdeca5">crema de cacao</option>
+      <option value="cremdele5">crema de leche</option>
+      <option value="cremdemu5">crême de mure</option>
+      <option value="fresa5">fresa</option>
+      <option value="gin5">gin</option>
+      <option value="ginlondry5">gin london dry</option>
+      <option value="granadina5">granadina</option>
+      <option value="hierbabuena5">hierbabuena</option>
+      <option value="jadefrem5">jarabe de frambuesa</option>
+      <option value="jadejen5">jarabe de jengibre</option>
+      <option value="jademan5">jarabe de manzana</option>
+      <option value="jadepiahu5">jarabe de piña ahumada</option>
+      <option value="jasi5">jarabe simple</option>
+      <option value="judearan5">jugo de arandanos</option>
+      <option value="judeli5">jugo de limón</option>
+      <option value="judena5">jugo de naranja</option>
+      <option value="judepi5">jugo de piña</option>
+      <option value="jadeto5">jarabe de tomate</option>
+      <option value="lideca5">licor de café</option>
+      <option value="lideda5">licor de durazno</option>
+      <option value="lidejen5">licor de jengibre</option>
+      <option value="lideman5">licor de manzana</option>
+      <option value="lideme5">licor de melón</option>
+      <option value="manzana5">manzana</option>
+      <option value="miel5">miel</option>
+      <option id="op_naranja5" value="naranja5">naranja</option>
+      <option value="ron5">ron</option>
+      <option value="ronbla5">ron blanco</option>
+      <option value="soda5">soda</option>
+      <option value="tequila5">tequila</option>
+      <option value="trisec5">triple sec</option>
+      <option value="verdry5">vermouth dry</option>
+      <option value="verro5">vermouth rosso</option>
+      <option id="op_vino5" value="vino5">vino</option>
+      <option value="vodka5">vodka</option>
+      <option value="vodci5">vodka citrón</option>
+      <option value="whisky5">whisky</option>
+      <option value="whisbour5">whisky bourbon</option>
+      <option value="whises5">whisky escosés</option>
+</select>
+
+<select id="ing_sang_selector6" onchange="next1(), next2()">
+      <option value="0"></option>
+      <option value="adecoco6">agua de coco</option>
+      <option value="atonic6">agua tónica</option>
+      <option value="amaretto6">amaretto</option>
+      <option value="amadeango6">amargo de angostura</option>
+      <option value="azucar6">azucar</option>
+      <option id="op_brandy6" value="brandy6">brandy</option>
+      <option value="cachaca6">cachaça</option>
+      <option value="cafees6">café espresso</option>
+      <option value="campari6">campari</option>
+      <option value="casa6">caramelo salado</option>
+      <option value="casdeli6">cascos de limón</option>
+      <option value="cereza6">cereza</option>
+      <option value="cladehue6">clara de huevo</option>
+      <option value="cremdeca6">crema de cacao</option>
+      <option value="cremdele6">crema de leche</option>
+      <option value="cremdemu6">crême de mure</option>
+      <option value="fresa6">fresa</option>
+      <option value="gin6">gin</option>
+      <option value="ginlondry6">gin london dry</option>
+      <option value="granadina6">granadina</option>
+      <option value="hierbabuena6">hierbabuena</option>
+      <option value="jadefrem6">jarabe de frambuesa</option>
+      <option value="jadejen6">jarabe de jengibre</option>
+      <option value="jademan6">jarabe de manzana</option>
+      <option value="jadepiahu6">jarabe de piña ahumada</option>
+      <option value="jasi6">jarabe simple</option>
+      <option value="judearan6">jugo de arandanos</option>
+      <option value="judeli6">jugo de limón</option>
+      <option value="judena6">jugo de naranja</option>
+      <option value="judepi6">jugo de piña</option>
+      <option value="jadeto6">jarabe de tomate</option>
+      <option value="lideca6">licor de café</option>
+      <option value="lideda6">licor de durazno</option>
+      <option value="lidejen6">licor de jengibre</option>
+      <option value="lideman6">licor de manzana</option>
+      <option value="lideme6">licor de melón</option>
+      <option value="manzana6">manzana</option>
+      <option value="miel6">miel</option>
+      <option id="op_naranja6" value="naranja6">naranja</option>
+      <option value="ron6">ron</option>
+      <option value="ronbla6">ron blanco</option>
+      <option value="soda6">soda</option>
+      <option value="tequila6">tequila</option>
+      <option value="trisec6">triple sec</option>
+      <option value="verdry6">vermouth dry</option>
+      <option value="verro6">vermouth rosso</option>
+      <option id="op_vino6" value="vino6">vino</option>
+      <option value="vodka6">vodka</option>
+      <option value="vodci6">vodka citrón</option>
+      <option value="whisky6">whisky</option>
+      <option value="whisbour6">whisky bourbon</option>
+      <option value="whises6">whisky escosés</option>
+</select>
+
+<select id="ing_sang_selector7" onchange="next1(), next2()">
+      <option value="0"></option>
+      <option value="adecoco7">agua de coco</option>
+      <option value="atonic7">agua tónica</option>
+      <option value="amaretto7">amaretto</option>
+      <option value="amadeango7">amargo de angostura</option>
+      <option value="azucar7">azucar</option>
+      <option id="op_brandy7" value="brandy5">brandy</option>
+      <option value="cachaca7">cachaça</option>
+      <option value="cafees7">café espresso</option>
+      <option value="campari7">campari</option>
+      <option value="casa7">caramelo salado</option>
+      <option value="casdeli7">cascos de limón</option>
+      <option value="cereza7">cereza</option>
+      <option value="cladehue7">clara de huevo</option>
+      <option value="cremdeca7">crema de cacao</option>
+      <option value="cremdele7">crema de leche</option>
+      <option value="cremdemu7">crême de mure</option>
+      <option value="fresa7">fresa</option>
+      <option value="gin7">gin</option>
+      <option value="ginlondry7">gin london dry</option>
+      <option value="granadina7">granadina</option>
+      <option value="hierbabuena7">hierbabuena</option>
+      <option value="jadefrem7">jarabe de frambuesa</option>
+      <option value="jadejen7">jarabe de jengibre</option>
+      <option value="jademan7">jarabe de manzana</option>
+      <option value="jadepiahu7">jarabe de piña ahumada</option>
+      <option value="jasi7">jarabe simple</option>
+      <option value="judearan7">jugo de arandanos</option>
+      <option value="judeli7">jugo de limón</option>
+      <option value="judena7">jugo de naranja</option>
+      <option value="judepi7">jugo de piña</option>
+      <option value="jadeto7">jarabe de tomate</option>
+      <option value="lideca7">licor de café</option>
+      <option value="lideda7">licor de durazno</option>
+      <option value="lidejen7">licor de jengibre</option>
+      <option value="lideman7">licor de manzana</option>
+      <option value="lideme7">licor de melón</option>
+      <option value="manzana7">manzana</option>
+      <option value="miel7">miel</option>
+      <option id="op_naranja7" value="naranja7">naranja</option>
+      <option value="ron7">ron</option>
+      <option value="ronbla7">ron blanco</option>
+      <option value="soda7">soda</option>
+      <option value="tequila7">tequila</option>
+      <option value="trisec7">triple sec</option>
+      <option value="verdry7">vermouth dry</option>
+      <option value="verro7">vermouth rosso</option>
+      <option id="op_vino7" value="vino7">vino</option>
+      <option value="vodka7">vodka</option>
+      <option value="vodci7">vodka citrón</option>
+      <option value="whisky7">whisky</option>
+      <option value="whisbour7">whisky bourbon</option>
+      <option value="whises7">whisky escosés</option>
+</select>
+
+<select id="ing_sang_selector8" onchange="next1()">
+      <option value="0"></option>
+      <option value="adecoco8">agua de coco</option>
+      <option value="atonic8">agua tónica</option>
+      <option value="amaretto8">amaretto</option>
+      <option value="amadeango8">amargo de angostura</option>
+      <option value="azucar8">azucar</option>
+      <option id="op_brandy8" value="brandy8">brandy</option>
+      <option value="cachaca8">cachaça</option>
+      <option value="cafees8">café espresso</option>
+      <option value="campari8">campari</option>
+      <option value="casa8">caramelo salado</option>
+      <option value="casdeli8">cascos de limón</option>
+      <option value="cereza8">cereza</option>
+      <option value="cladehue8">clara de huevo</option>
+      <option value="cremdeca8">crema de cacao</option>
+      <option value="cremdele8">crema de leche</option>
+      <option value="cremdemu8">crême de mure</option>
+      <option value="fresa8">fresa</option>
+      <option value="gin8">gin</option>
+      <option value="ginlondry8">gin london dry</option>
+      <option value="granadina8">granadina</option>
+      <option value="hierbabuena8">hierbabuena</option>
+      <option value="jadefrem8">jarabe de frambuesa</option>
+      <option value="jadejen8">jarabe de jengibre</option>
+      <option value="jademan8">jarabe de manzana</option>
+      <option value="jadepiahu8">jarabe de piña ahumada</option>
+      <option value="jasi8">jarabe simple</option>
+      <option value="judearan8">jugo de arandanos</option>
+      <option value="judeli8">jugo de limón</option>
+      <option value="judena8">jugo de naranja</option>
+      <option value="judepi8">jugo de piña</option>
+      <option value="jadeto8">jugo de tomate</option>
+      <option value="lideca8">licor de café</option>
+      <option value="lideda8">licor de durazno</option>
+      <option value="lidejen8">licor de jengibre</option>
+      <option value="lideman8">licor de manzana</option>
+      <option value="lideme8">licor de melón</option>
+      <option value="manzana8">manzana</option>
+      <option value="miel8">miel</option>
+      <option id="op_naranja8" value="naranja8">naranja</option>
+      <option value="ron8">ron</option>
+      <option value="ronbla8">ron blanco</option>
+      <option value="soda8">soda</option>
+      <option value="tequila8">tequila</option>
+      <option value="trisec8">triple sec</option>
+      <option value="verdry8">vermouth dry</option>
+      <option value="verro8">vermouth rosso</option>
+      <option id="op_vino8" value="vino8">vino</option>
+      <option value="vodka8">vodka</option>
+      <option value="vodci8">vodka citrón</option>
+      <option value="whisky8">whisky</option>
+      <option value="whisbour8">whisky bourbon</option>
+      <option value="whises8">whisky escosés</option>
+</select>
+
+<select id="ing_sang_selector9" onchange="next1(), next2()">
+      <option value="0"></option>
+      <option value="adecoco9">agua de coco</option>
+      <option value="atonic9">agua tónica</option>
+      <option value="amaretto9">amaretto</option>
+      <option value="amadeango9">amargo de angostura</option>
+      <option value="azucar9">azucar</option>
+      <option id="op_brandy9" value="brandy9">brandy</option>
+      <option value="cachaca9">cachaça</option>
+      <option value="cafees9">café espresso</option>
+      <option value="campari9">campari</option>
+      <option value="casa9">caramelo salado</option>
+      <option value="casdeli9">cascos de limón</option>
+      <option value="cereza9">cereza</option>
+      <option value="cladehue9">clara de huevo</option>
+      <option value="cremdeca9">crema de cacao</option>
+      <option value="cremdele9">crema de leche</option>
+      <option value="cremdemu9">crême de mure</option>
+      <option value="fresa9">fresa</option>
+      <option value="gin9">gin</option>
+      <option value="ginlondry9">gin london dry</option>
+      <option value="granadina9">granadina</option>
+      <option value="hierbabuena9">hierbabuena</option>
+      <option value="jadefrem9">jarabe de frambuesa</option>
+      <option value="jadejen9">jarabe de jengibre</option>
+      <option value="jademan9">jarabe de manzana</option>
+      <option value="jadepiahu9">jarabe de piña ahumada</option>
+      <option value="jasi9">jarabe simple</option>
+      <option value="judearan9">jugo de arandanos</option>
+      <option value="judeli9">jugo de limón</option>
+      <option value="judena9">jugo de naranja</option>
+      <option value="judepi9">jugo de piña</option>
+      <option value="jadeto9">jugo de tomate</option>
+      <option value="lideca9">licor de café</option>
+      <option value="lideda9">licor de durazno</option>
+      <option value="lidejen9">licor de jengibre</option>
+      <option value="lideman9">licor de manzana</option>
+      <option value="lideme9">licor de melón</option>
+      <option value="manzana9">manzana</option>
+      <option value="miel9">miel</option>
+      <option id="op_naranja9" value="naranja9">naranja</option>
+      <option value="ron9">ron</option>
+      <option value="ronbla9">ron blanco</option>
+      <option value="soda9">soda</option>
+      <option value="tequila9">tequila</option>
+      <option value="trisec9">triple sec</option>
+      <option value="verdry9">vermouth dry</option>
+      <option value="verro9">vermouth rosso</option>
+      <option id="op_vino9" value="vino9">vino</option>
+      <option value="vodka9">vodka</option>
+      <option value="vodci9">vodka citrón</option>
+      <option value="whisky9">whisky</option>
+      <option value="whisbour9">whisky bourbon</option>
+      <option value="whises9">whisky escosés</option>
+</select>
+
+<p><button id="segundo_boton" type="button" disabled onclick="aber()">aber</button></p>
+
+</div>
+
+<div id="yaaay"><h1>yaaay :D</h1></div>
+
+
+<button id="primer_boton" type="button" onclick="empezar()">empezar</button>
+
+<script src="scr.js"></script>
+</body>
+</html>
